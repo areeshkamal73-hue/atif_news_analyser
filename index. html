@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atif AI News Analyzer</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#081323;color:white;
+ font-family:Arial,sans-serif;padding:16px
+}
+header{
+ background:#142b4b;padding:20px;
+ border-radius:14px;text-align:center
+}
+h1{font-size:23px;margin:0}
+.sub{color:#aabbd0;font-size:13px;margin-top:8px}
+.card{
+ background:#14243a;border:1px solid #29415f;
+ border-radius:13px;padding:17px;margin-top:15px
+}
+.assets{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.asset{text-align:center}
+.asset h2{margin:5px;color:#ffd166}
+.status{color:#ffc857;font-weight:bold}
+.small{font-size:13px;color:#aabbd0}
+.news{border-left:4px solid #e9ad37}
+button{
+ width:100%;padding:13px;background:#1769d2;
+ color:white;border:0;border-radius:9px;
+ font-size:15px;margin-top:12px
+}
+footer{text-align:center;color:#8295ae;font-size:12px;margin:20px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>ATIF AI NEWS ANALYZER</h1>
+<div class="sub">GOLD & BTC | NEWS INTELLIGENCE</div>
+<div class="sub" id="clock">UAE TIME</div>
+</header>
+
+<div class="card">
+<h3>MARKET DIRECTION</h3>
+<div class="assets">
+<div class="asset">
+<h2>GOLD</h2>
+<div>XAUUSD</div>
+<p class="status">WAITING FOR DATA</p>
+<div class="small">Probability: N/A</div>
+</div>
+<div class="asset">
+<h2>BITCOIN</h2>
+<div>BTCUSD</div>
+<p class="status">WAITING FOR DATA</p>
+<div class="small">Probability: N/A</div>
+</div>
+</div>
+</div>
+
+<div class="card news">
+<h3>UPCOMING ECONOMIC NEWS</h3>
+<p>News calendar connection pending</p>
+<p class="small">Forecast: N/A</p>
+<p class="small">Previous: N/A</p>
+<p class="small">Actual: N/A</p>
+</div>
+
+<div class="card">
+<h3>PRE-NEWS ANALYSIS</h3>
+<p class="status">WAITING FOR NEWS DATA</p>
+<p class="small">Gold: No prediction yet</p>
+<p class="small">BTC: No prediction yet</p>
+</div>
+
+<div class="card">
+<h3>POST-NEWS CONFIRMATION</h3>
+<p class="status">WAITING FOR ACTUAL DATA</p>
+<p class="small">Actual vs Forecast: Pending</p>
+<p class="small">Market Reaction: Pending</p>
+</div>
+
+<footer>
+Atif AI News Analyzer<br>
+Version 1.0 | Data connection pending
+</footer>
+
+<script>
+function updateClock(){
+ document.getElementById("clock").textContent =
+ "UAE TIME: " +
+ new Date().toLocaleTimeString("en-US",{
+ timeZone:"Asia/Dubai"
+ });
+}
+updateClock();
+setInterval(updateClock,1000);
+</script>
+
+</body>
+</html>
